@@ -381,9 +381,10 @@ h1 {
   }
 
   .interests button {
-    font-size: 1.1rem;
-    padding: 22px;
-  }
+  min-height: 95px;
+  font-size: 1.2rem;
+  padding: 24px 20px;
+}
 
   .results h2 {
     font-size: 1.8rem;
