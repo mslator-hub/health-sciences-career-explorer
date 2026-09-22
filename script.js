@@ -373,7 +373,6 @@ exploreButton.addEventListener("click", function() {
         where your interests could take you next.
       </p>
 
-
       <div class="education-grid">
 
 
@@ -390,6 +389,15 @@ exploreButton.addEventListener("click", function() {
             Physical therapists complete a professional doctoral program
             before entering practice.
           </p>
+
+          <a
+            class="education-link"
+            href="https://www.apta.org/your-career/careers-in-physical-therapy/becoming-a-pt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the PT pathway →
+          </a>
 
         </div>
 
@@ -408,6 +416,15 @@ exploreButton.addEventListener("click", function() {
             OT program before entering practice.
           </p>
 
+          <a
+            class="education-link"
+            href="https://www.aota.org/career/become-an-ot-ota"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the OT pathway →
+          </a>
+
         </div>
 
 
@@ -424,6 +441,15 @@ exploreButton.addEventListener("click", function() {
             Pharmacists complete a professional PharmD program and meet
             licensure requirements.
           </p>
+
+          <a
+            class="education-link"
+            href="https://www.aacp.org/resource/admissions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the pharmacy pathway →
+          </a>
 
         </div>
 
@@ -442,6 +468,15 @@ exploreButton.addEventListener("click", function() {
             physician assistant program before entering practice.
           </p>
 
+          <a
+            class="education-link"
+            href="https://paeaonline.org/our-programs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore PA programs →
+          </a>
+
         </div>
 
 
@@ -459,13 +494,21 @@ exploreButton.addEventListener("click", function() {
             clinical training.
           </p>
 
+          <a
+            class="education-link"
+            href="https://students-residents.aamc.org/apply-medical-school"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore medical school →
+          </a>
+
         </div>
 
 
       </div>
 
     </div>
-
   `;
 
 
