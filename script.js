@@ -325,6 +325,9 @@ exploreButton.addEventListener("click", function() {
   // DISPLAY RESULTS
   // ==========================================
 
+  const initialCareers = matchingCareers.slice(0, 5);
+  const remainingCareers = matchingCareers.slice(5);
+
   results.innerHTML = `
 
     <h2>Careers to Explore</h2>
@@ -335,28 +338,43 @@ exploreButton.addEventListener("click", function() {
     </p>
 
 
-    ${matchingCareers.map(function(career) {
+    <div id="initial-careers">
 
-      return `
-        <div
-          class="career-card"
-          data-career="${career.name}"
-        >
+      ${initialCareers.map(function(career) {
 
-          <h3>${career.name}</h3>
+        return `
+          <div
+            class="career-card"
+            data-career="${career.name}"
+          >
 
-          <p class="match-label">
-            Matches ${career.score} of your selected interests
-          </p>
+            <h3>${career.name}</h3>
 
-          <p>
-            ${career.description}
-          </p>
+            <p class="match-label">
+              Matches ${career.score} of your selected interests
+            </p>
 
-        </div>
-      `;
+            <p>
+              ${career.description}
+            </p>
 
-    }).join("")}
+          </div>
+        `;
+
+      }).join("")}
+
+    </div>
+
+
+    ${remainingCareers.length > 0 ? `
+      <button
+        type="button"
+        id="show-more-careers"
+        class="explore-button"
+      >
+        + Show more career matches
+      </button>
+    ` : ""}
 
 
     <!-- ==========================================
@@ -509,13 +527,96 @@ exploreButton.addEventListener("click", function() {
       </div>
 
     </div>
+
   `;
 
 
+  // ==========================================
+  // INITIAL CAREER CARDS
+  // ==========================================
+
   makeCareerCardsClickable();
 
-});
 
+  // ==========================================
+  // SHOW MORE CAREERS
+  // ==========================================
+
+  const showMoreButton =
+    document.querySelector("#show-more-careers");
+
+  if (showMoreButton) {
+
+    showMoreButton.addEventListener("click", function() {
+
+      const remainingContainer =
+        document.createElement("div");
+
+      remainingContainer.id = "remaining-careers";
+
+      remainingContainer.innerHTML =
+        remainingCareers.map(function(career) {
+
+          return `
+            <div
+              class="career-card"
+              data-career="${career.name}"
+            >
+
+              <h3>${career.name}</h3>
+
+              <p class="match-label">
+                Matches ${career.score} of your selected interests
+              </p>
+
+              <p>
+                ${career.description}
+              </p>
+
+            </div>
+          `;
+
+        }).join("");
+
+      const continuedEducation =
+        document.querySelector(".continued-education");
+
+      results.insertBefore(
+        remainingContainer,
+        continuedEducation
+      );
+
+      // Make only the newly revealed cards clickable
+      const newCareerCards =
+        remainingContainer.querySelectorAll(".career-card");
+
+      newCareerCards.forEach(function(card) {
+
+        card.addEventListener("click", function() {
+
+          const careerName =
+            this.dataset.career;
+
+          const career =
+            careers.find(function(career) {
+
+              return career.name === careerName;
+
+            });
+
+          showCareerDetails(career);
+
+        });
+
+      });
+
+      showMoreButton.remove();
+
+    });
+
+  }
+
+});
 
 // ==========================================
 // MAKE CAREER CARDS CLICKABLE
