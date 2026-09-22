@@ -312,3 +312,66 @@ h1 {
     text-align: center;
   }
 }
+/* -----------------------------
+   Program to Consider
+----------------------------- */
+
+.program-card {
+  background: #f4f8ff;
+  border: 2px solid #c9d8f5;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 26px 0;
+  transition: all 0.2s ease;
+}
+
+.program-card:hover {
+  border-color: #0039a6;
+  box-shadow: 0 3px 10px rgba(0, 57, 166, 0.12);
+}
+
+.program-card h3 {
+  color: #0039a6;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.program-card h4 {
+  color: #263238;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+.program-card p {
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.program-link {
+  display: inline-block;
+  color: #0039a6;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #0039a6;
+  border-radius: 6px;
+  padding: 9px 14px;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.program-link:hover {
+  background: #0039a6;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .program-card {
+    padding: 18px;
+  }
+
+  .program-link {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
