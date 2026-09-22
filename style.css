@@ -1,138 +1,223 @@
+/* ================================
+   HEALTH SCIENCES CAREER EXPLORER
+   Visual Design
+================================ */
+
+
+/* ---------- Page ---------- */
+
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 50px 25px;
   background: #f4f7f9;
   color: #263238;
-  margin: 0;
-  padding: 0;
 }
 
-#app {
+
+/* ---------- Main App ---------- */
+
+.app {
   max-width: 950px;
   margin: 0 auto;
-  padding: 40px 24px;
 }
 
+
+/* ---------- Header ---------- */
+
 h1 {
-  color: #0039a6;
+  text-align: center;
   font-size: 2.7rem;
-  margin-bottom: 8px;
+  margin: 0 0 12px;
+  color: #203040;
 }
 
 .subtitle {
+  text-align: center;
   font-size: 1.6rem;
-  margin-bottom: 8px;
+  margin: 0 0 6px;
+  font-weight: 600;
 }
 
 .instructions {
-  margin-bottom: 25px;
+  text-align: center;
+  color: #68757d;
+  margin: 0;
 }
+
+
+/* ---------- Interest Cards ---------- */
 
 .interests {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 18px;
+  margin: 35px 0 30px;
 }
 
-.interest-button {
-  background: white;
-  border: 2px solid #d5dde2;
-  border-radius: 12px;
+.interests button {
+  min-height: 80px;
   padding: 20px;
-  text-align: left;
-  font-size: 1rem;
+  border: 2px solid #d5dde2;
+  border-radius: 14px;
+  background: white;
   color: #263238;
+  font-size: 1.05rem;
+  text-align: left;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition:
+    background 0.2s,
+    border 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
-.interest-button:hover {
+.interests button:hover {
   border-color: #0039a6;
-  box-shadow: 0 2px 8px rgba(0, 57, 166, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.interest-button.selected {
-  border-color: #0039a6;
-  box-shadow: 0 0 0 2px rgba(0, 57, 166, 0.12);
+
+/* Selected interest */
+
+.interests button.selected {
+  border: 3px solid #0039a6;
+  background: #e8eef9;
+  color: #0039a6;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 57, 166, 0.15);
 }
 
-#explore-button {
+
+/* ---------- Explore Button ---------- */
+
+.explore-button {
   display: block;
-  margin: 25px auto;
-  padding: 13px 25px;
-  background: #2146b8;
-  color: white;
+  margin: 0 auto;
+  padding: 16px 32px;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 10px;
+  background: #0039a6;
+  color: white;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 
-#explore-button:hover {
-  background: #0039a6;
+.explore-button:hover {
+  background: #002d82;
+  transform: translateY(-2px);
 }
 
-#results {
-  margin-top: 40px;
+
+/* ---------- Results ---------- */
+
+.results {
+  margin-top: 50px;
 }
+
+.results h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.results > p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  text-align: center;
+  color: #68757d;
+  line-height: 1.6;
+}
+
+
+/* ---------- Career Cards ---------- */
 
 .career-card {
   background: white;
-  border: 1px solid #d5dde2;
-  border-radius: 12px;
-  padding: 22px;
-  margin-bottom: 18px;
+  border: 2px solid #d5dde2;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition:
+    border 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .career-card:hover {
   border-color: #0039a6;
-  box-shadow: 0 3px 10px rgba(0, 57, 166, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 57, 166, 0.1);
 }
 
 .career-card h3 {
-  color: #0039a6;
-  margin-top: 0;
+  margin: 0 0 8px;
+  font-size: 1.3rem;
 }
+
+.career-card p {
+  line-height: 1.6;
+}
+
+.match-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #68757d;
+}
+
+
+/* ---------- Career Detail ---------- */
 
 .career-detail {
   background: white;
-  border: 1px solid #d5dde2;
-  border-radius: 12px;
-  padding: 26px;
-  margin-top: 20px;
-}
-
-.back-button {
-  background: white;
-  border: 1px solid #cbd5dc;
-  border-radius: 6px;
-  padding: 8px 14px;
-  color: #0039a6;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.back-button:hover {
-  border-color: #0039a6;
-  background: #f5f8ff;
+  border: 2px solid #d5dde2;
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: 30px;
 }
 
 .career-detail h2 {
-  color: #2146b8;
-  text-align: center;
-  margin-bottom: 24px;
+  font-size: 2.2rem;
+  margin: 25px 0;
+  color: #0039a6;
 }
 
 .career-detail h3 {
-  margin-top: 26px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.25rem;
 }
 
-/* -----------------------------
-   Program to Consider
------------------------------ */
+.career-detail p,
+.career-detail li {
+  line-height: 1.7;
+}
+
+
+/* ---------- Back Button ---------- */
+
+.back-button {
+  padding: 10px 16px;
+  border: 2px solid #d5dde2;
+  border-radius: 8px;
+  background: white;
+  color: #0039a6;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.back-button:hover {
+  background: #e8eef9;
+  border-color: #0039a6;
+}
+
+
+/* ---------- Program to Consider ---------- */
 
 .program-card {
   background: #f4f8ff;
@@ -140,12 +225,16 @@ h1 {
   border-radius: 12px;
   padding: 20px;
   margin: 26px 0;
-  transition: all 0.2s ease;
+  transition:
+    border 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .program-card:hover {
   border-color: #0039a6;
-  box-shadow: 0 3px 10px rgba(0, 57, 166, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 57, 166, 0.12);
 }
 
 .program-card h3 {
@@ -157,24 +246,26 @@ h1 {
 .program-card h4 {
   color: #263238;
   font-size: 1.1rem;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
 
 .program-card p {
   margin-bottom: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .program-link {
   display: inline-block;
+  padding: 9px 14px;
+  border: 2px solid #0039a6;
+  border-radius: 8px;
+  background: white;
   color: #0039a6;
   font-weight: bold;
   text-decoration: none;
-  border: 1px solid #0039a6;
-  border-radius: 6px;
-  padding: 9px 14px;
-  background: white;
-  transition: all 0.2s ease;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .program-link:hover {
@@ -182,9 +273,47 @@ h1 {
   color: white;
 }
 
-/* -----------------------------
-   Continued Education
------------------------------ */
+
+/* ---------- Related Careers ---------- */
+
+.related-careers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.related-career-card {
+  background: #f4f7f9;
+  border: 2px solid #d5dde2;
+  border-radius: 12px;
+  padding: 18px;
+  cursor: pointer;
+  transition:
+    border 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.related-career-card:hover {
+  border-color: #0039a6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 57, 166, 0.1);
+}
+
+.related-career-card strong {
+  font-size: 1rem;
+}
+
+.related-career-card p {
+  font-size: 0.9rem;
+  color: #68757d;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
+/* ---------- Continued Education ---------- */
 
 .continued-education {
   margin-top: 35px;
@@ -226,60 +355,17 @@ h1 {
   line-height: 1.5;
 }
 
-/* -----------------------------
-   Related Careers
------------------------------ */
 
-.related-careers {
-  margin-top: 28px;
-}
-
-.related-careers h3 {
-  margin-bottom: 14px;
-}
-
-.related-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-
-.related-card {
-  background: #f8fafb;
-  border: 1px solid #d5dde2;
-  border-radius: 10px;
-  padding: 15px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.related-card:hover {
-  border-color: #0039a6;
-  background: #f4f8ff;
-}
-
-.related-card h4 {
-  margin: 0 0 8px 0;
-  color: #263238;
-}
-
-.related-card p {
-  margin: 0;
-  color: #60717c;
-  font-size: 0.9rem;
-}
-
-/* -----------------------------
-   Mobile
------------------------------ */
+/* ---------- Smaller Screens ---------- */
 
 @media (max-width: 700px) {
-  #app {
-    padding: 28px 16px;
+
+  body {
+    padding: 30px 15px;
   }
 
   h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .subtitle {
@@ -290,16 +376,16 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .related-careers {
+    grid-template-columns: 1fr;
+  }
+
   .education-grid {
     grid-template-columns: 1fr;
   }
 
-  .related-grid {
-    grid-template-columns: 1fr;
-  }
-
   .career-detail {
-    padding: 20px;
+    padding: 24px;
   }
 
   .program-card {
@@ -307,71 +393,8 @@ h1 {
   }
 
   .program-link {
-    width: 100%;
-    box-sizing: border-box;
+    display: block;
     text-align: center;
   }
-}
-/* -----------------------------
-   Program to Consider
------------------------------ */
 
-.program-card {
-  background: #f4f8ff;
-  border: 2px solid #c9d8f5;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 26px 0;
-  transition: all 0.2s ease;
-}
-
-.program-card:hover {
-  border-color: #0039a6;
-  box-shadow: 0 3px 10px rgba(0, 57, 166, 0.12);
-}
-
-.program-card h3 {
-  color: #0039a6;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.program-card h4 {
-  color: #263238;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-}
-
-.program-card p {
-  margin-bottom: 16px;
-  line-height: 1.5;
-}
-
-.program-link {
-  display: inline-block;
-  color: #0039a6;
-  font-weight: bold;
-  text-decoration: none;
-  border: 1px solid #0039a6;
-  border-radius: 6px;
-  padding: 9px 14px;
-  background: white;
-  transition: all 0.2s ease;
-}
-
-.program-link:hover {
-  background: #0039a6;
-  color: white;
-}
-
-@media (max-width: 700px) {
-  .program-card {
-    padding: 18px;
-  }
-
-  .program-link {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-  }
 }
