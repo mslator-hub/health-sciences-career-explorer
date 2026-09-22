@@ -1,53 +1,66 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Sciences Career Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <h1>Health Sciences Career Explorer</h1>
+<body>
 
-  <p class="subtitle">What speaks to you?</p>
+  <div class="app">
 
-  <p class="instructions">
-    Select as many as you like.
-  </p>
+    <h1>Health Sciences Career Explorer</h1>
 
-  <div class="interests">
+    <p class="subtitle">What speaks to you?</p>
 
-    <button type="button" class="interest-button">
-      🧩 I like solving problems.
+    <p class="instructions">
+      Select as many as you like.
+    </p>
+
+    <div class="interests">
+
+      <button type="button" class="interest-button">
+        🧩 I like solving problems.
+      </button>
+
+      <button type="button" class="interest-button">
+        📊 I like working with data.
+      </button>
+
+      <button type="button" class="interest-button">
+        💻 I like technology.
+      </button>
+
+      <button type="button" class="interest-button">
+        🧑‍🤝‍🧑 I like helping people.
+      </button>
+
+      <button type="button" class="interest-button">
+        🌎 I care about improving communities.
+      </button>
+
+      <button type="button" class="interest-button">
+        🔬 I like research.
+      </button>
+
+      <button type="button" class="interest-button">
+        📋 I like organizing projects and systems.
+      </button>
+
+    </div>
+
+    <button type="button" class="explore-button">
+      Explore Careers →
     </button>
 
-    <button type="button" class="interest-button">
-      📊 I like working with data.
-    </button>
-
-    <button type="button" class="interest-button">
-      💻 I like technology.
-    </button>
-
-    <button type="button" class="interest-button">
-      🧑‍🤝‍🧑 I like helping people.
-    </button>
-
-    <button type="button" class="interest-button">
-      🌎 I care about improving communities.
-    </button>
-
-    <button type="button" class="interest-button">
-      🔬 I like research.
-    </button>
-
-    <button type="button" class="interest-button">
-      📋 I like organizing projects and systems.
-    </button>
+    <div id="results" class="results"></div>
 
   </div>
 
-  <button type="button" class="explore-button">
-    Explore Careers →
-  </button>
+  <script src="script.js"></script>
 
-  <div id="results" class="results"></div>
-
-</div>
-
-<script src="script.js"></script>
+</body>
+</html>
