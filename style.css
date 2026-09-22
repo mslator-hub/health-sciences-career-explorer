@@ -398,3 +398,33 @@ h1 {
   }
 
 }
+/* ---------- Continued Education Links ---------- */
+
+.education-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 9px 14px;
+  border: 2px solid #0039a6;
+  border-radius: 8px;
+  background: white;
+  color: #0039a6;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.education-link:hover {
+  background: #0039a6;
+  color: white;
+}
+
+@media (max-width: 700px) {
+
+  .education-link {
+    display: block;
+    text-align: center;
+  }
+
+}
