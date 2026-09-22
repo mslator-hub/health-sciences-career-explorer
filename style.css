@@ -365,15 +365,40 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
+  }
+
+  .instructions {
+    font-size: 1.05rem;
   }
 
   .interests {
     grid-template-columns: 1fr;
+  }
+
+  .interests button {
+    font-size: 1.1rem;
+    padding: 22px;
+  }
+
+  .results h2 {
+    font-size: 1.8rem;
+  }
+
+  .career-card {
+    padding: 22px;
+  }
+
+  .career-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .career-card p {
+    font-size: 1rem;
   }
 
   .related-careers {
@@ -384,47 +409,36 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .education-card {
+    padding: 20px;
+  }
+
+  .education-card p {
+    font-size: 1rem;
+  }
+
   .career-detail {
     padding: 24px;
+  }
+
+  .career-detail h2 {
+    font-size: 1.9rem;
+  }
+
+  .career-detail p,
+  .career-detail li {
+    font-size: 1rem;
   }
 
   .program-card {
     padding: 18px;
   }
 
-  .program-link {
-    display: block;
-    text-align: center;
-  }
-
-}
-/* ---------- Continued Education Links ---------- */
-
-.education-link {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 9px 14px;
-  border: 2px solid #0039a6;
-  border-radius: 8px;
-  background: white;
-  color: #0039a6;
-  font-weight: bold;
-  text-decoration: none;
-  transition:
-    background 0.2s,
-    color 0.2s;
-}
-
-.education-link:hover {
-  background: #0039a6;
-  color: white;
-}
-
-@media (max-width: 700px) {
-
+  .program-link,
   .education-link {
     display: block;
     text-align: center;
+    padding: 11px 14px;
   }
 
 }
