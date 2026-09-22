@@ -3,9 +3,6 @@
    Visual Design
 ================================ */
 
-
-/* ---------- Page ---------- */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,16 +11,15 @@ body {
   color: #263238;
 }
 
-
-/* ---------- Main App ---------- */
-
 .app {
   max-width: 950px;
   margin: 0 auto;
 }
 
 
-/* ---------- Header ---------- */
+/* ================================
+   HEADER
+================================ */
 
 h1 {
   text-align: center;
@@ -46,7 +42,9 @@ h1 {
 }
 
 
-/* ---------- Interest Cards ---------- */
+/* ================================
+   INTEREST BUTTONS
+================================ */
 
 .interests {
   display: grid;
@@ -78,9 +76,6 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-
-/* Selected interest */
-
 .interests button.selected {
   border: 3px solid #0039a6;
   background: #e8eef9;
@@ -90,7 +85,9 @@ h1 {
 }
 
 
-/* ---------- Explore Button ---------- */
+/* ================================
+   EXPLORE BUTTON
+================================ */
 
 .explore-button {
   display: block;
@@ -114,7 +111,9 @@ h1 {
 }
 
 
-/* ---------- Results ---------- */
+/* ================================
+   RESULTS
+================================ */
 
 .results {
   margin-top: 50px;
@@ -135,7 +134,9 @@ h1 {
 }
 
 
-/* ---------- Career Cards ---------- */
+/* ================================
+   CAREER CARDS
+================================ */
 
 .career-card {
   background: white;
@@ -172,7 +173,78 @@ h1 {
 }
 
 
-/* ---------- Career Detail ---------- */
+/* ================================
+   CONTINUED EDUCATION
+================================ */
+
+.continued-education {
+  margin-top: 55px;
+  padding-top: 35px;
+  border-top: 2px solid #d5dde2;
+}
+
+.continued-education h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 12px;
+  color: #203040;
+}
+
+.continued-education > p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #68757d;
+  line-height: 1.6;
+}
+
+
+/* ================================
+   EDUCATION CARDS
+================================ */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.education-card {
+  background: white;
+  border: 2px solid #d5dde2;
+  border-radius: 14px;
+  padding: 24px;
+  transition:
+    border 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.education-card:hover {
+  border-color: #0039a6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 57, 166, 0.1);
+}
+
+.education-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.3rem;
+  color: #0039a6;
+}
+
+.education-card p {
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.education-card strong {
+  color: #263238;
+}
+
+
+/* ================================
+   CAREER DETAIL
+================================ */
 
 .career-detail {
   background: white;
@@ -199,7 +271,9 @@ h1 {
 }
 
 
-/* ---------- Back Button ---------- */
+/* ================================
+   BACK BUTTON
+================================ */
 
 .back-button {
   padding: 10px 16px;
@@ -217,7 +291,9 @@ h1 {
 }
 
 
-/* ---------- Related Careers ---------- */
+/* ================================
+   RELATED CAREERS
+================================ */
 
 .related-careers {
   display: grid;
@@ -256,7 +332,9 @@ h1 {
 }
 
 
-/* ---------- Smaller Screens ---------- */
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 700px) {
 
@@ -273,6 +351,10 @@ h1 {
   }
 
   .interests {
+    grid-template-columns: 1fr;
+  }
+
+  .education-grid {
     grid-template-columns: 1fr;
   }
 
