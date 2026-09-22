@@ -19,6 +19,33 @@ const interestLabels = {
 
 
 // ==========================================
+// PROGRAM INFORMATION
+// ==========================================
+
+const programs = {
+
+  healthSciences: {
+    name: "B.I.S. in Health Sciences",
+    icon: "🩺",
+    description:
+      "A Health Sciences degree can help students build a foundation for health-related careers and prepare for further professional education in areas such as physical therapy and occupational therapy.",
+    url:
+      "https://admissions.gsu.edu/program/health-sciences-bis/"
+  },
+
+  healthInformatics: {
+    name: "B.I.S. in Health Informatics",
+    icon: "💻",
+    description:
+      "Health Informatics combines healthcare, information technology, data management and analytics, privacy and security, and project management.",
+    url:
+      "https://www.gsu.edu/program/health-informatics-bis/"
+  }
+
+};
+
+
+// ==========================================
 // CAREER LIBRARY
 // ==========================================
 
@@ -27,6 +54,7 @@ const careers = [
   {
     name: "Community Health Consultant",
     interests: ["problems", "helping", "community", "organizing"],
+    program: "healthSciences",
     description:
       "Identifies and addresses health concerns in a community, develops and implements programs, educates others, and connects resources while working with community leaders, healthcare providers, and government."
   },
@@ -34,6 +62,7 @@ const careers = [
   {
     name: "Community Health Education Coordinator",
     interests: ["helping", "community", "organizing"],
+    program: "healthSciences",
     description:
       "Plans, develops, and manages educational programs and outreach activities while working with organizations, schools, and residents. May coordinate workshops, recruitment, promotion, and evaluation."
   },
@@ -41,6 +70,7 @@ const careers = [
   {
     name: "Health Coach",
     interests: ["helping", "organizing"],
+    program: "healthSciences",
     description:
       "Helps clients create personalized plans to improve their physical health, including fitness, nutrition, and habits, while supporting their goals and actions."
   },
@@ -48,6 +78,7 @@ const careers = [
   {
     name: "Health Educator",
     interests: ["helping", "community", "research", "organizing"],
+    program: "healthSciences",
     description:
       "Informs people about health and wellness, connects people with resources, teaches workshops, collects community health data, assists with enrollment in public health programs, assesses training needs, and plans health education programs."
   },
@@ -55,6 +86,7 @@ const careers = [
   {
     name: "Health Policy Analyst",
     interests: ["problems", "data", "technology", "community", "research"],
+    program: "healthSciences",
     description:
       "Examines and evaluates policies governing healthcare delivery and scope, uses evidence to recommend changes, supports compliance with laws and regulations, and helps develop policies related to access, affordability, and quality."
   },
@@ -62,6 +94,7 @@ const careers = [
   {
     name: "Health Promotion Specialist",
     interests: ["helping", "community", "organizing"],
+    program: "healthSciences",
     description:
       "Works to improve health and well-being through education, policy development, and community mobilization while addressing underlying causes of health concerns."
   },
@@ -69,6 +102,7 @@ const careers = [
   {
     name: "Health Services Coordinator",
     interests: ["helping", "community", "organizing"],
+    program: "healthSciences",
     description:
       "Connects patients, providers, and community resources while coordinating care and services, communication, education, advocacy, and access."
   },
@@ -76,6 +110,7 @@ const careers = [
   {
     name: "Human Services Specialist",
     interests: ["helping", "community", "organizing"],
+    program: "healthSciences",
     description:
       "Assists people experiencing emotional, financial, mental, physical, or social problems through peer counseling, referrals, accompaniment, and help accessing social programs."
   },
@@ -83,6 +118,7 @@ const careers = [
   {
     name: "Patient Advocate",
     interests: ["helping", "problems", "organizing"],
+    program: "healthSciences",
     description:
       "Assists patients with illness or injury with insurance and treatment needs, reviews claims and documents, communicates with providers and insurance companies, and helps identify alternative options."
   },
@@ -90,6 +126,7 @@ const careers = [
   {
     name: "Physical Therapy / Occupational Therapy Aide",
     interests: ["helping", "organizing"],
+    program: "healthSciences",
     description:
       "Prepares materials and equipment and performs clerical tasks such as scheduling, answering phones, managing supplies, and handling insurance paperwork."
   },
@@ -97,6 +134,7 @@ const careers = [
   {
     name: "Rehabilitation Specialist",
     interests: ["helping", "organizing", "problems"],
+    program: "healthSciences",
     description:
       "Assists people with mental or physical disabilities in re-acclimating to independent living, coordinates client care, assesses needs and eligibility, and teaches practical skills."
   },
@@ -104,6 +142,7 @@ const careers = [
   {
     name: "Researcher",
     interests: ["problems", "data", "research"],
+    program: "healthSciences",
     description:
       "Recognizes patterns, locates and analyzes information, gathers data through sources such as articles, surveys, and interviews, plans research methods, analyzes results, interprets findings, and makes recommendations."
   },
@@ -111,6 +150,7 @@ const careers = [
   {
     name: "Vocational Rehabilitation Counselor",
     interests: ["helping", "problems", "organizing"],
+    program: "healthSciences",
     description:
       "Supports people with physical, emotional, or developmental challenges toward sustainable employment by assessing needs, developing plans, coordinating resources, advocating for workplace accommodations, and providing support."
   },
@@ -118,6 +158,7 @@ const careers = [
   {
     name: "Data Analyst",
     interests: ["problems", "data", "technology", "organizing"],
+    program: "healthInformatics",
     description:
       "Uses data to identify patterns, answer questions, create reports, and help organizations make informed decisions. In healthcare, analysts may work with clinical, operational, financial, or population health data."
   },
@@ -125,6 +166,7 @@ const careers = [
   {
     name: "Clinical Systems Analyst",
     interests: ["problems", "data", "technology", "organizing"],
+    program: "healthInformatics",
     description:
       "Helps healthcare organizations implement, maintain, and improve information systems used by clinical teams. The work may include analyzing workflows, investigating system problems, supporting users, and communicating between clinical and technical teams."
   },
@@ -132,6 +174,7 @@ const careers = [
   {
     name: "Business Analyst",
     interests: ["problems", "data", "technology", "organizing"],
+    program: "healthInformatics",
     description:
       "Analyzes processes, requirements, and data to help organizations improve systems and solve business problems. In healthcare, business analysts may work with clinical, administrative, or technology teams."
   },
@@ -139,6 +182,7 @@ const careers = [
   {
     name: "Application Analyst",
     interests: ["problems", "data", "technology", "organizing"],
+    program: "healthInformatics",
     description:
       "Supports healthcare software applications by analyzing workflows, configuring systems, testing changes, and helping users solve problems."
   },
@@ -146,6 +190,7 @@ const careers = [
   {
     name: "Service / Help Desk Analyst",
     interests: ["technology", "problems", "helping"],
+    program: "healthInformatics",
     description:
       "Provides first-line technical support, helping users troubleshoot technology problems and access the systems they need."
   }
@@ -524,6 +569,15 @@ function showCareerDetails(career) {
 
 
   // ==========================================
+  // PROGRAM TO CONSIDER
+  // ==========================================
+
+  const program = career.program
+    ? programs[career.program]
+    : null;
+
+
+  // ==========================================
   // DISPLAY CAREER DETAILS
   // ==========================================
 
@@ -557,6 +611,36 @@ function showCareerDetails(career) {
         }).join("")}
 
       </ul>
+
+
+      ${program ? `
+
+        <div class="program-card">
+
+          <h3>
+            ${program.icon} Program to Consider
+          </h3>
+
+          <h4>
+            ${program.name}
+          </h4>
+
+          <p>
+            ${program.description}
+          </p>
+
+          <a
+            class="program-link"
+            href="${program.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the program at Georgia State →
+          </a>
+
+        </div>
+
+      ` : ""}
 
 
       <h3>You might also explore</h3>
