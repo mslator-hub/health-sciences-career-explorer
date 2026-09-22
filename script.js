@@ -24,97 +24,131 @@ const interestLabels = {
 
 const careers = [
 
-  {
+{
     name: "Community Health Consultant",
     interests: ["problems", "helping", "community", "organizing"],
-    description:
-      "Identifies and addresses health concerns in a community, develops and implements programs, educates others, and connects resources while working with community leaders, healthcare providers, and government."
-  },
+    description: "Helps organizations and communities identify health needs, develop programs, and connect people with resources.",
+    details: "Community health consultants work with organizations, programs, and communities to identify health needs and improve services. The work can involve research, planning, communication, and helping organizations respond to community needs."
+},
 
-  {
+{
     name: "Community Health Education Coordinator",
     interests: ["helping", "community", "organizing"],
-    description:
-      "Plans, develops, and manages educational programs and outreach activities while working with organizations, schools, and residents. May coordinate workshops, recruitment, promotion, and evaluation."
-  },
+    description: "Coordinates health education programs and activities that help communities make informed health decisions.",
+    details: "Community health education coordinators organize educational programs, events, and outreach activities. They may work with community organizations, schools, healthcare organizations, or public health programs."
+},
 
-  {
+{
     name: "Health Coach",
     interests: ["helping", "organizing"],
-    description:
-      "Helps clients create personalized plans to improve their physical health, including fitness, nutrition, and habits, while supporting their goals and actions."
-  },
+    description: "Works with people to support healthy behaviors, goals, and lifestyle changes.",
+    details: "Health coaches help people identify goals, develop strategies, and make sustainable changes related to health and wellness. Communication, organization, and relationship-building are important parts of the work."
+},
 
-  {
+{
     name: "Health Educator",
     interests: ["helping", "community", "research", "organizing"],
-    description:
-      "Informs people about health and wellness, connects people with resources, teaches workshops, collects community health data, assists with enrollment in public health programs, assesses training needs, and plans health education programs."
-  },
+    description: "Creates and delivers health education programs that help individuals and communities understand health information.",
+    details: "Health educators develop educational materials, programs, and activities designed to improve health knowledge and behaviors. They may work in healthcare organizations, community programs, schools, government agencies, or nonprofit organizations."
+},
 
-  {
+{
     name: "Health Policy Analyst",
     interests: ["problems", "data", "technology", "community", "research"],
-    description:
-      "Examines and evaluates policies governing healthcare delivery and scope, uses evidence to recommend changes, supports compliance with laws and regulations, and helps develop policies related to access, affordability, and quality."
-  },
+    description: "Researches health policies and uses evidence and data to help organizations understand healthcare issues and potential solutions.",
+    details: "Health policy analysts research legislation, regulations, healthcare systems, and public health issues. They may analyze data, prepare reports, and communicate findings to organizations and decision-makers."
+},
 
-  {
+{
     name: "Health Promotion Specialist",
     interests: ["helping", "community", "organizing"],
-    description:
-      "Works to improve health and well-being through education, policy development, and community mobilization while addressing underlying causes of health concerns."
-  },
+    description: "Develops programs and activities designed to improve health and wellness in individuals and communities.",
+    details: "Health promotion specialists plan and evaluate programs that encourage healthier behaviors and improve community health. Their work may include education, outreach, program coordination, and evaluation."
+},
 
-  {
+{
     name: "Health Services Coordinator",
     interests: ["helping", "community", "organizing"],
-    description:
-      "Connects patients, providers, and community resources while coordinating care and services, communication, education, advocacy, and access."
-  },
+    description: "Coordinates healthcare services, programs, or resources to help people navigate systems and receive appropriate support.",
+    details: "Health services coordinators help organize healthcare programs and services. They may coordinate schedules, resources, referrals, communication, and other administrative or patient-support activities."
+},
 
-  {
+{
     name: "Human Services Specialist",
     interests: ["helping", "community", "organizing"],
-    description:
-      "Assists people experiencing emotional, financial, mental, physical, or social problems through peer counseling, referrals, accompaniment, and help accessing social programs."
-  },
+    description: "Helps individuals and families connect with social, health, and community resources.",
+    details: "Human services specialists work with people and organizations to connect individuals with services and resources. The work often involves communication, organization, problem-solving, and knowledge of community programs."
+},
 
-  {
+{
     name: "Patient Advocate",
     interests: ["helping", "problems", "organizing"],
-    description:
-      "Assists patients with illness or injury with insurance and treatment needs, reviews claims and documents, communicates with providers and insurance companies, and helps identify alternative options."
-  },
+    description: "Helps patients understand healthcare systems, communicate their needs, and navigate available services.",
+    details: "Patient advocates help patients and families navigate healthcare systems and communicate with healthcare providers. They may assist with resources, communication, documentation, and resolving barriers to care."
+},
 
-  {
+{
     name: "Physical Therapy / Occupational Therapy Aide",
     interests: ["helping", "organizing"],
-    description:
-      "Prepares materials and equipment and performs clerical tasks such as scheduling, answering phones, managing supplies, and handling insurance paperwork."
-  },
+    description: "Supports physical or occupational therapy teams by helping prepare treatment areas and assisting with routine patient-related tasks.",
+    details: "Therapy aides support physical or occupational therapy practices with administrative, equipment, and patient-support tasks. This can provide exposure to rehabilitation environments and patient care."
+},
 
-  {
+{
     name: "Rehabilitation Specialist",
     interests: ["helping", "organizing", "problems"],
-    description:
-      "Assists people with mental or physical disabilities in re-acclimating to independent living, coordinates client care, assesses needs and eligibility, and teaches practical skills."
-  },
+    description: "Supports people working toward greater independence and participation following illness, injury, or disability.",
+    details: "Rehabilitation specialists may work with individuals facing physical, developmental, or other barriers to participation and independence. The work can involve assessment, support planning, coordination, and problem-solving."
+},
 
-  {
+{
     name: "Researcher",
     interests: ["problems", "data", "research"],
-    description:
-      "Recognizes patterns, locates and analyzes information, gathers data through sources such as articles, surveys, and interviews, plans research methods, analyzes results, interprets findings, and makes recommendations."
-  },
+    description: "Uses research methods, evidence, and data to investigate questions and contribute to knowledge about health and human behavior.",
+    details: "Health researchers investigate questions using scientific and analytical methods. Depending on the field, researchers may collect and analyze data, conduct studies, evaluate programs, or communicate findings."
+},
 
-  {
+{
     name: "Vocational Rehabilitation Counselor",
     interests: ["helping", "problems", "organizing"],
-    description:
-      "Supports people with physical, emotional, or developmental challenges toward sustainable employment by assessing needs, developing plans, coordinating resources, advocating for workplace accommodations, and providing support."
-  }
+    description: "Helps people with disabilities explore employment, education, and independent-living goals.",
+    details: "Vocational rehabilitation counselors help individuals identify goals and overcome barriers related to employment, education, and independence. The work involves assessment, counseling, planning, and coordination."
+},
 
+{
+    name: "Data Analyst",
+    interests: ["problems", "data", "technology", "organizing"],
+    description: "Uses data to identify patterns, answer questions, create reports, and help organizations make informed decisions.",
+    details: "Data analysts collect, organize, examine, and communicate information to help organizations understand what is happening and make decisions. In healthcare, analysts may work with clinical, operational, financial, or population health data."
+},
+
+{
+    name: "Clinical Systems Analyst",
+    interests: ["problems", "data", "technology", "organizing"],
+    description: "Helps healthcare organizations implement, maintain, and improve information systems used by clinical teams.",
+    details: "Clinical systems analysts work at the intersection of healthcare and information technology. They may help configure and maintain healthcare information systems, investigate system problems, analyze workflows, support users, and communicate between clinical staff and technical teams."
+},
+
+{
+    name: "Business Analyst",
+    interests: ["problems", "data", "technology", "organizing"],
+    description: "Analyzes processes, requirements, and data to help organizations improve systems and solve business problems.",
+    details: "Business analysts gather requirements, document processes and data flows, analyze information, and help organizations improve systems and workflows. In healthcare, they may work with clinical, administrative, or technology teams."
+},
+
+{
+    name: "Application Analyst",
+    interests: ["problems", "data", "technology", "organizing"],
+    description: "Supports healthcare software applications by analyzing workflows, configuring systems, testing changes, and helping users solve problems.",
+    details: "Application analysts work between healthcare operations and information technology. They may support software applications, analyze workflows, configure and test systems, investigate issues, and help users make effective use of healthcare technology."
+},
+
+{
+    name: "Service / Help Desk Analyst",
+    interests: ["technology", "problems", "helping"],
+    description: "Provides first-line technical support, helping users troubleshoot technology problems and access the systems they need.",
+    details: "Service and help desk analysts respond to technical support requests, troubleshoot common problems, manage access issues, document solutions, and escalate more complex problems. In healthcare settings, they may support systems used by clinical and administrative staff."
+}
 ];
 
 
