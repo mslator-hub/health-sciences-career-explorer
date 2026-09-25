@@ -157,8 +157,9 @@ h1 {
 }
 
 .career-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-size: 1.3rem;
+  color: #203040;
 }
 
 .career-card p {
@@ -166,9 +167,47 @@ h1 {
 }
 
 .match-label {
-  font-size: 0.9rem;
+  display: inline-block;
+  font-size: 0.85rem;
   font-weight: bold;
-  color: #68757d;
+  color: #0039a6;
+  background: #e8eef9;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 4px 0 12px;
+}
+
+
+/* ---------- Career Card Data ---------- */
+
+.career-card-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e1e6ea;
+}
+
+.career-card-data span {
+  background: #f4f7f9;
+  border: 1px solid #d5dde2;
+  border-radius: 8px;
+  padding: 8px 11px;
+  font-size: 0.9rem;
+  color: #45545c;
+}
+
+.career-card-data strong {
+  color: #263238;
+}
+
+
+/* Education badge on career cards */
+
+.career-card-data span:last-child {
+  color: #0039a6;
+  font-weight: 600;
 }
 
 
@@ -196,6 +235,71 @@ h1 {
 .career-detail p,
 .career-detail li {
   line-height: 1.7;
+}
+
+
+/* ---------- Career Snapshot ---------- */
+
+.career-snapshot {
+  margin: 30px 0;
+  padding: 24px;
+  background: #f4f8ff;
+  border: 2px solid #c9d8f5;
+  border-radius: 14px;
+}
+
+.career-snapshot h3 {
+  margin: 0 0 18px;
+  color: #0039a6;
+  font-size: 1.3rem;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.snapshot-item {
+  background: white;
+  border: 1px solid #d5dde2;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.snapshot-item strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #68757d;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+}
+
+.snapshot-item span {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #263238;
+}
+
+.career-data-note {
+  margin: 18px 0 10px;
+  font-size: 0.85rem;
+  color: #68757d;
+  line-height: 1.5 !important;
+}
+
+.bls-source {
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid #d5dde2;
+  font-size: 0.9rem;
+  color: #68757d;
+}
+
+.bls-source strong {
+  color: #45545c;
 }
 
 
@@ -354,9 +458,9 @@ h1 {
 .education-card p {
   line-height: 1.5;
 }
-.education-card p {
-  line-height: 1.5;
-}
+
+
+/* ---------- Links ---------- */
 
 .education-link {
   display: inline-block;
@@ -377,6 +481,7 @@ h1 {
   background: #0039a6;
   color: white;
 }
+
 
 /* ---------- Smaller Screens ---------- */
 
@@ -403,10 +508,10 @@ h1 {
   }
 
   .interests button {
-  min-height: 95px;
-  font-size: 1.2rem;
-  padding: 24px 20px;
-}
+    min-height: 95px;
+    font-size: 1.2rem;
+    padding: 24px 20px;
+  }
 
   .results h2 {
     font-size: 1.8rem;
@@ -422,6 +527,23 @@ h1 {
 
   .career-card p {
     font-size: 1rem;
+  }
+
+  .career-card-data {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .career-card-data span {
+    font-size: 0.95rem;
+  }
+
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-snapshot {
+    padding: 20px;
   }
 
   .related-careers {
