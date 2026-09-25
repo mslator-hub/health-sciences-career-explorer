@@ -47,152 +47,268 @@ const programs = {
 
 // ==========================================
 // CAREER LIBRARY
+// BLS-VERIFIED CAREER DATA
 // ==========================================
 
 const careers = [
 
   {
-    name: "Community Health Consultant",
-    interests: ["problems", "helping", "community", "organizing"],
-    program: "healthSciences",
-    description:
-      "Identifies and addresses health concerns in a community, develops and implements programs, educates others, and connects resources while working with community leaders, healthcare providers, and government."
-  },
-
-  {
-    name: "Community Health Education Coordinator",
+    name: "Community Health Workers",
     interests: ["helping", "community", "organizing"],
     program: "healthSciences",
+
     description:
-      "Plans, develops, and manages educational programs and outreach activities while working with organizations, schools, and residents. May coordinate workshops, recruitment, promotion, and evaluation."
+      "Promote wellness, help people adopt healthy behaviors, connect people with health resources, and support community health programs.",
+
+    medianPay: "$51,850",
+    growth: "13%",
+    annualOpenings: "~7,000",
+
+    education: null,
+
+    blsTitle: "Community Health Workers",
+    blsUrl:
+      "https://www.bls.gov/ooh/community-and-social-service/community-health-workers.htm"
   },
 
-  {
-    name: "Health Coach",
-    interests: ["helping", "organizing"],
-    program: "healthSciences",
-    description:
-      "Helps clients create personalized plans to improve their physical health, including fitness, nutrition, and habits, while supporting their goals and actions."
-  },
 
   {
-    name: "Health Educator",
+    name: "Health Education Specialists",
     interests: ["helping", "community", "research", "organizing"],
     program: "healthSciences",
+
     description:
-      "Informs people about health and wellness, connects people with resources, teaches workshops, collects community health data, assists with enrollment in public health programs, assesses training needs, and plans health education programs."
+      "Develop programs and materials that teach people about conditions affecting health and well-being and help communities make informed health decisions.",
+
+    medianPay: "$64,070",
+    growth: "6%",
+    annualOpenings: "~6,900",
+
+    education: "Bachelor's degree",
+
+    blsTitle: "Health Education Specialists",
+    blsUrl:
+      "https://www.bls.gov/ooh/community-and-social-service/health-educators.htm"
   },
 
-  {
-    name: "Health Policy Analyst",
-    interests: ["problems", "data", "technology", "community", "research"],
-    program: "healthSciences",
-    description:
-      "Examines and evaluates policies governing healthcare delivery and scope, uses evidence to recommend changes, supports compliance with laws and regulations, and helps develop policies related to access, affordability, and quality."
-  },
 
   {
-    name: "Health Promotion Specialist",
-    interests: ["helping", "community", "organizing"],
-    program: "healthSciences",
-    description:
-      "Works to improve health and well-being through education, policy development, and community mobilization while addressing underlying causes of health concerns."
-  },
-
-  {
-    name: "Health Services Coordinator",
-    interests: ["helping", "community", "organizing"],
-    program: "healthSciences",
-    description:
-      "Connects patients, providers, and community resources while coordinating care and services, communication, education, advocacy, and access."
-  },
-
-  {
-    name: "Human Services Specialist",
-    interests: ["helping", "community", "organizing"],
-    program: "healthSciences",
-    description:
-      "Assists people experiencing emotional, financial, mental, physical, or social problems through peer counseling, referrals, accompaniment, and help accessing social programs."
-  },
-
-  {
-    name: "Patient Advocate",
-    interests: ["helping", "problems", "organizing"],
-    program: "healthSciences",
-    description:
-      "Assists patients with illness or injury with insurance and treatment needs, reviews claims and documents, communicates with providers and insurance companies, and helps identify alternative options."
-  },
-
-  {
-    name: "Physical Therapy / Occupational Therapy Aide",
+    name: "Fitness Trainers and Instructors",
     interests: ["helping", "organizing"],
     program: "healthSciences",
+
     description:
-      "Prepares materials and equipment and performs clerical tasks such as scheduling, answering phones, managing supplies, and handling insurance paperwork."
+      "Lead, instruct, and motivate individuals or groups in exercise activities and help people work toward physical fitness goals.",
+
+    medianPay: "$47,160",
+    growth: "7%",
+    annualOpenings: "~68,000",
+
+    education: null,
+
+    blsTitle: "Fitness Trainers and Instructors",
+    blsUrl:
+      "https://www.bls.gov/ooh/personal-care-and-service/fitness-trainers-and-instructors.htm"
   },
 
+
   {
-    name: "Rehabilitation Specialist",
+    name: "Social and Human Service Assistants",
+    interests: ["helping", "community", "organizing"],
+    program: "healthSciences",
+
+    description:
+      "Help people access services and resources and provide support in areas such as rehabilitation, social services, and community programs.",
+
+    medianPay: "$45,930",
+    growth: "7%",
+    annualOpenings: "~48,900",
+
+    education: null,
+
+    blsTitle: "Social and Human Service Assistants",
+    blsUrl:
+      "https://www.bls.gov/ooh/community-and-social-service/social-and-human-service-assistants.htm"
+  },
+
+
+  {
+    name: "Rehabilitation Counselors",
     interests: ["helping", "organizing", "problems"],
     program: "healthSciences",
+
     description:
-      "Assists people with mental or physical disabilities in re-acclimating to independent living, coordinates client care, assesses needs and eligibility, and teaches practical skills."
+      "Help people with disabilities manage the personal, social, and psychological effects of disabilities and work toward employment or independent living.",
+
+    medianPay: "$46,850",
+    growth: "2%",
+    annualOpenings: "~8,200",
+
+    education: "Master's degree typically",
+
+    blsTitle: "Rehabilitation Counselors",
+    blsUrl:
+      "https://www.bls.gov/ooh/community-and-social-service/rehabilitation-counselors.htm"
   },
 
+
   {
-    name: "Researcher",
-    interests: ["problems", "data", "research"],
+    name: "Healthcare Social Workers",
+    interests: ["helping", "community", "problems"],
     program: "healthSciences",
+
     description:
-      "Recognizes patterns, locates and analyzes information, gathers data through sources such as articles, surveys, and interviews, plans research methods, analyzes results, interprets findings, and makes recommendations."
+      "Help patients and families cope with illness, treatment, and changes in health or living circumstances and connect them with appropriate resources and services.",
+
+    medianPay: "$67,880",
+    growth: "8%",
+    annualOpenings: "~16,500",
+
+    education: "Bachelor's degree or master's degree",
+
+    blsTitle: "Healthcare Social Workers",
+    blsUrl:
+      "https://www.bls.gov/ooh/community-and-social-service/social-workers.htm"
   },
 
+
   {
-    name: "Vocational Rehabilitation Counselor",
-    interests: ["helping", "problems", "organizing"],
+    name: "Physical Therapist Aides",
+    interests: ["helping", "organizing"],
     program: "healthSciences",
+
     description:
-      "Supports people with physical, emotional, or developmental challenges toward sustainable employment by assessing needs, developing plans, coordinating resources, advocating for workplace accommodations, and providing support."
+      "Prepare treatment areas and equipment, assist physical therapists and physical therapist assistants, and perform administrative or support tasks.",
+
+    medianPay: "$35,240",
+    growth: "4%",
+    annualOpenings: "~2,000",
+
+    education: null,
+
+    blsTitle: "Physical Therapist Aides",
+    blsUrl:
+      "https://www.bls.gov/ooh/healthcare/physical-therapist-assistants-and-aides.htm"
   },
 
+
   {
-    name: "Data Analyst",
+    name: "Occupational Therapy Aides",
+    interests: ["helping", "organizing"],
+    program: "healthSciences",
+
+    description:
+      "Prepare treatment areas and equipment, assist occupational therapy staff, and perform support and administrative tasks.",
+
+    medianPay: "$39,160",
+    growth: "4%",
+    annualOpenings: "~200",
+
+    education: null,
+
+    blsTitle: "Occupational Therapy Aides",
+    blsUrl:
+      "https://www.bls.gov/ooh/healthcare/occupational-therapy-assistants-and-aides.htm"
+  },
+
+
+  {
+    name: "Medical and Health Services Managers",
+    interests: ["organizing", "problems", "helping", "community"],
+    program: "healthSciences",
+
+    description:
+      "Plan, direct, and coordinate the business activities of healthcare providers, including operations, budgets, staffing, and organizational systems.",
+
+    medianPay: "$123,860",
+    growth: "24%",
+    annualOpenings: "~62,300",
+
+    education: "Bachelor's degree + related experience",
+
+    blsTitle: "Medical and Health Services Managers",
+    blsUrl:
+      "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm"
+  },
+
+
+  {
+    name: "Health Information Technologists and Medical Registrars",
+    interests: ["data", "technology", "problems", "organizing"],
+    program: "healthInformatics",
+
+    description:
+      "Advise organizations on computerized healthcare systems and analyze clinical data while helping maintain accurate, secure, and useful health information.",
+
+    medianPay: "$68,020",
+    growth: "16%",
+    annualOpenings: "~3,000",
+
+    education: "Additional education beyond high school",
+
+    blsTitle: "Health Information Technologists and Medical Registrars",
+    blsUrl:
+      "https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm"
+  },
+
+
+  {
+    name: "Operations Research Analysts",
+    interests: ["problems", "data", "research", "technology"],
+    program: "healthInformatics",
+
+    description:
+      "Use mathematics, logic, data, and analytical methods to help organizations solve complex problems and make informed decisions.",
+
+    medianPay: "$88,940",
+    growth: "12%",
+    annualOpenings: "~7,500",
+
+    education: "Bachelor's degree",
+
+    blsTitle: "Operations Research Analysts",
+    blsUrl:
+      "https://www.bls.gov/ooh/math/operations-research-analysts.htm"
+  },
+
+
+  {
+    name: "Computer Systems Analysts",
     interests: ["problems", "data", "technology", "organizing"],
     program: "healthInformatics",
+
     description:
-      "Uses data to identify patterns, answer questions, create reports, and help organizations make informed decisions. In healthcare, analysts may work with clinical, operational, financial, or population health data."
+      "Study existing computer systems and design ways to improve their efficiency. Some systems analysts specialize in industry-specific systems, including healthcare.",
+
+    medianPay: "$105,850",
+    growth: "8%",
+    annualOpenings: "~32,900",
+
+    education: "Bachelor's degree",
+
+    blsTitle: "Computer Systems Analysts",
+    blsUrl:
+      "https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm"
   },
 
-  {
-    name: "Clinical Systems Analyst",
-    interests: ["problems", "data", "technology", "organizing"],
-    program: "healthInformatics",
-    description:
-      "Helps healthcare organizations implement, maintain, and improve information systems used by clinical teams. The work may include analyzing workflows, investigating system problems, supporting users, and communicating between clinical and technical teams."
-  },
 
   {
-    name: "Business Analyst",
-    interests: ["problems", "data", "technology", "organizing"],
-    program: "healthInformatics",
-    description:
-      "Analyzes processes, requirements, and data to help organizations improve systems and solve business problems. In healthcare, business analysts may work with clinical, administrative, or technology teams."
-  },
-
-  {
-    name: "Application Analyst",
-    interests: ["problems", "data", "technology", "organizing"],
-    program: "healthInformatics",
-    description:
-      "Supports healthcare software applications by analyzing workflows, configuring systems, testing changes, and helping users solve problems."
-  },
-
-  {
-    name: "Service / Help Desk Analyst",
+    name: "Computer User Support Specialists",
     interests: ["technology", "problems", "helping"],
     program: "healthInformatics",
+
     description:
-      "Provides first-line technical support, helping users troubleshoot technology problems and access the systems they need."
+      "Analyze users' computer problems, diagnose causes, guide users through solutions, install or repair equipment and software, and provide technical support.",
+
+    medianPay: "$61,860",
+    growth: "-3%",
+    annualOpenings: null,
+
+    education: null,
+
+    blsTitle: "Computer User Support Specialists",
+    blsUrl:
+      "https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm"
   }
 
 ];
@@ -258,6 +374,84 @@ function getSelectedCategories() {
   });
 
   return selectedCategories;
+
+}
+
+
+// ==========================================
+// CAREER SNAPSHOT HTML
+// ==========================================
+
+function getCareerSnapshot(career) {
+
+  return `
+
+    <div class="career-snapshot">
+
+      <h3>Career Snapshot</h3>
+
+      <div class="snapshot-grid">
+
+        <div class="snapshot-item">
+          <strong>Median pay</strong>
+          <span>${career.medianPay}</span>
+        </div>
+
+        <div class="snapshot-item">
+          <strong>Projected growth</strong>
+          <span>${career.growth}</span>
+        </div>
+
+        ${
+          career.annualOpenings
+            ? `
+              <div class="snapshot-item">
+                <strong>Annual openings</strong>
+                <span>${career.annualOpenings}</span>
+              </div>
+            `
+            : ""
+        }
+
+        ${
+          career.education
+            ? `
+              <div class="snapshot-item">
+                <strong>Education</strong>
+                <span>🎓 ${career.education}</span>
+              </div>
+            `
+            : ""
+        }
+
+      </div>
+
+      <p class="career-data-note">
+        National BLS figures. Actual pay and opportunities vary by
+        location, employer, experience, and specific position.
+      </p>
+
+      <p class="bls-source">
+
+        <strong>BLS occupation:</strong>
+        ${career.blsTitle}
+
+        <br>
+
+        <a
+          class="education-link"
+          href="${career.blsUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View this occupation at the U.S. Bureau of Labor Statistics →
+        </a>
+
+      </p>
+
+    </div>
+
+  `;
 
 }
 
@@ -346,6 +540,7 @@ exploreButton.addEventListener("click", function() {
       ${initialCareers.map(function(career) {
 
         return `
+
           <div
             class="career-card"
             data-career="${career.name}"
@@ -361,7 +556,43 @@ exploreButton.addEventListener("click", function() {
               ${career.description}
             </p>
 
+            <div class="career-card-data">
+
+              <span>
+                <strong>Median pay:</strong>
+                ${career.medianPay}
+              </span>
+
+              <span>
+                <strong>Growth:</strong>
+                ${career.growth}
+              </span>
+
+              ${
+                career.annualOpenings
+                  ? `
+                    <span>
+                      <strong>Annual openings:</strong>
+                      ${career.annualOpenings}
+                    </span>
+                  `
+                  : ""
+              }
+
+              ${
+                career.education
+                  ? `
+                    <span>
+                      🎓 ${career.education}
+                    </span>
+                  `
+                  : ""
+              }
+
+            </div>
+
           </div>
+
         `;
 
       }).join("")}
@@ -369,15 +600,19 @@ exploreButton.addEventListener("click", function() {
     </div>
 
 
-    ${remainingCareers.length > 0 ? `
-      <button
-        type="button"
-        id="show-more-careers"
-        class="explore-button"
-      >
-        + Show more career matches
-      </button>
-    ` : ""}
+    ${
+      remainingCareers.length > 0
+        ? `
+          <button
+            type="button"
+            id="show-more-careers"
+            class="explore-button"
+          >
+            + Show more career matches
+          </button>
+        `
+        : ""
+    }
 
 
     <!-- ==========================================
@@ -586,6 +821,7 @@ exploreButton.addEventListener("click", function() {
         remainingCareers.map(function(career) {
 
           return `
+
             <div
               class="career-card"
               data-career="${career.name}"
@@ -601,10 +837,47 @@ exploreButton.addEventListener("click", function() {
                 ${career.description}
               </p>
 
+              <div class="career-card-data">
+
+                <span>
+                  <strong>Median pay:</strong>
+                  ${career.medianPay}
+                </span>
+
+                <span>
+                  <strong>Growth:</strong>
+                  ${career.growth}
+                </span>
+
+                ${
+                  career.annualOpenings
+                    ? `
+                      <span>
+                        <strong>Annual openings:</strong>
+                        ${career.annualOpenings}
+                      </span>
+                    `
+                    : ""
+                }
+
+                ${
+                  career.education
+                    ? `
+                      <span>
+                        🎓 ${career.education}
+                      </span>
+                    `
+                    : ""
+                }
+
+              </div>
+
             </div>
+
           `;
 
         }).join("");
+
 
       const continuedEducation =
         document.querySelector(".continued-education");
@@ -614,7 +887,7 @@ exploreButton.addEventListener("click", function() {
         continuedEducation
       );
 
-      // Make only the newly revealed cards clickable
+
       const newCareerCards =
         remainingContainer.querySelectorAll(".career-card");
 
@@ -638,6 +911,7 @@ exploreButton.addEventListener("click", function() {
 
       });
 
+
       showMoreButton.remove();
 
     });
@@ -653,19 +927,22 @@ exploreButton.addEventListener("click", function() {
 
 function makeCareerCardsClickable() {
 
-  const careerCards = document.querySelectorAll(".career-card");
+  const careerCards =
+    document.querySelectorAll(".career-card");
 
   careerCards.forEach(function(card) {
 
     card.addEventListener("click", function() {
 
-      const careerName = this.dataset.career;
+      const careerName =
+        this.dataset.career;
 
-      const career = careers.find(function(career) {
+      const career =
+        careers.find(function(career) {
 
-        return career.name === careerName;
+          return career.name === careerName;
 
-      });
+        });
 
       showCareerDetails(career);
 
@@ -682,15 +959,20 @@ function makeCareerCardsClickable() {
 
 function showCareerDetails(career) {
 
-  const selectedCategories = getSelectedCategories();
+  const selectedCategories =
+    getSelectedCategories();
 
 
-  // Find which selected interests match this career
-  const matchingInterests = career.interests.filter(function(interest) {
+  // ==========================================
+  // FIND MATCHING INTERESTS
+  // ==========================================
 
-    return selectedCategories.includes(interest);
+  const matchingInterests =
+    career.interests.filter(function(interest) {
 
-  });
+      return selectedCategories.includes(interest);
+
+    });
 
 
   // ==========================================
@@ -773,6 +1055,9 @@ function showCareerDetails(career) {
       </p>
 
 
+      ${getCareerSnapshot(career)}
+
+
       <h3>You might like this career if...</h3>
 
       <ul>
@@ -786,34 +1071,38 @@ function showCareerDetails(career) {
       </ul>
 
 
-      ${program ? `
+      ${
+        program
+          ? `
 
-        <div class="program-card">
+            <div class="program-card">
 
-          <h3>
-            ${program.icon} Program to Consider
-          </h3>
+              <h3>
+                ${program.icon} Program to Consider
+              </h3>
 
-          <h4>
-            ${program.name}
-          </h4>
+              <h4>
+                ${program.name}
+              </h4>
 
-          <p>
-            ${program.description}
-          </p>
+              <p>
+                ${program.description}
+              </p>
 
-          <a
-            class="program-link"
-            href="${program.url}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Explore the program at Georgia State →
-          </a>
+              <a
+                class="program-link"
+                href="${program.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore the program at Georgia State →
+              </a>
 
-        </div>
+            </div>
 
-      ` : ""}
+          `
+          : ""
+      }
 
 
       <h3>You might also explore</h3>
@@ -824,6 +1113,7 @@ function showCareerDetails(career) {
         ${relatedCareers.map(function(relatedCareer) {
 
           return `
+
             <div
               class="related-career-card"
               data-career="${relatedCareer.name}"
@@ -840,6 +1130,7 @@ function showCareerDetails(career) {
               </p>
 
             </div>
+
           `;
 
         }).join("")}
@@ -856,7 +1147,8 @@ function showCareerDetails(career) {
   // BACK BUTTON
   // ==========================================
 
-  const backButton = document.querySelector(".back-button");
+  const backButton =
+    document.querySelector(".back-button");
 
   backButton.addEventListener("click", function() {
 
@@ -877,13 +1169,15 @@ function showCareerDetails(career) {
 
     card.addEventListener("click", function() {
 
-      const careerName = this.dataset.career;
+      const careerName =
+        this.dataset.career;
 
-      const relatedCareer = careers.find(function(career) {
+      const relatedCareer =
+        careers.find(function(career) {
 
-        return career.name === careerName;
+          return career.name === careerName;
 
-      });
+        });
 
       showCareerDetails(relatedCareer);
 
