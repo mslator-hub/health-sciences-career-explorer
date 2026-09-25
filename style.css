@@ -505,12 +505,14 @@ h1 {
 
   .interests {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 25px 0 20px;
   }
 
   .interests button {
-    min-height: 95px;
-    font-size: 1.2rem;
-    padding: 24px 20px;
+    min-height: 65px;
+    font-size: 1rem;
+    padding: 14px 16px;
   }
 
   .results h2 {
