@@ -286,7 +286,10 @@ exploreButton.addEventListener("click", function() {
   }
 
 
-  // Score every career
+  // ==========================================
+  // SCORE EVERY CAREER
+  // ==========================================
+
   const matchingCareers = careers
 
     .map(function(career) {
@@ -528,6 +531,31 @@ exploreButton.addEventListener("click", function() {
 
     </div>
 
+
+    <!-- ==========================================
+         HIMSS CAREER EXPLORATION
+         ========================================== -->
+
+    <div class="continued-education">
+
+      <h2>💻 Explore More Health Careers</h2>
+
+      <p>
+        Want to explore even more careers in health information and
+        technology? Check out the HIMSS Healthcare Career Pathways tool.
+      </p>
+
+      <a
+        class="education-link"
+        href="https://www.himss.org/careers/career-pathways/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Explore HIMSS Career Pathways →
+      </a>
+
+    </div>
+
   `;
 
 
@@ -617,6 +645,7 @@ exploreButton.addEventListener("click", function() {
   }
 
 });
+
 
 // ==========================================
 // MAKE CAREER CARDS CLICKABLE
